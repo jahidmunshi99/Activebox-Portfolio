@@ -1,0 +1,50 @@
+@media only screen and (max-width:1024px){
+    html{
+        font-size: 60%;
+    }
+
+    .header-area{
+        height: 150vh;
+    }
+
+    h1{
+        font-size: 5.8rem;
+    }
+
+    .hero-textbox p{
+        padding: 0 5%;
+    }
+
+    .portfolio{
+        width: 50%;
+    }
+
+    .our-team{
+        text-align: center;
+    }
+
+    .clients-reviews .right{
+        padding: 2.5%;    
+    }
+
+    .clients-reviews .right p{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width:980px){
+
+    html{
+        font-size: 58%;
+    }
+
+    .social-links ul li{
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .social-links ul li i{
+        font-size: 1.5rem;
+    }
+}

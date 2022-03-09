@@ -1,0 +1,478 @@
+/* Basic-Settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    text-rendering: optimizeLegibility;
+    font-size: 1.4rem; 
+}
+
+/* Re-Usabel-Component */
+.row{
+    width: 88%;
+    margin: 0 auto;
+    display: block;
+}
+
+section{
+    padding: 10rem 0;
+}
+
+.box{
+    padding: 1.2%;
+}
+
+.box p{
+    line-height: 2.3rem;
+    color: #6c7279;
+}
+
+h1{
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.role{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 1.3rem;
+    margin-bottom: 1.8rem;
+    display: block;
+}
+
+/* Button */
+.btn{
+    padding: 1.8rem 4.5rem;
+    background: #e84545;
+    color: #fff;
+    border-radius: 0.3rem;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+/* header-section-Starting */
+.header-area{
+    background: linear-gradient(rgba(48, 52, 79, 0.5), rgba(48, 52, 79, 0.5)),url("image/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 125vh;
+    position: relative;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5rem 0;
+    border-bottom: 1px solid #505369;
+}
+
+.logo{
+    width: 19rem;
+}
+
+.logo img{
+    width: 100%;
+    display: block;
+}
+
+.nav-menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 4rem;
+}
+
+.nav-menu ul li:nth-child(1){
+    margin-left: 0;
+}
+
+.nav-menu ul li::after{
+    content:"";
+    width: 0;
+    height: 0.25rem;
+    margin: 0 auto;
+    background: #e84545;
+    display: block;
+    transition: 0.5s ease-in-out;
+    margin-top: 1rem;
+}
+.nav-menu ul li:hover::after{
+    width: 100%;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #a2a4b0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-menu ul li:hover a{
+    color: #fff;
+}
+
+.hero-textbox{
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 70%;
+}
+
+.hero-textbox p{
+    font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    line-height: 3rem;
+}
+
+.hero-btn{
+    margin-top: 10rem;
+}
+
+.hero-btn:hover{
+    background: #e02a2a;
+}
+
+/* header-section-End */
+
+
+/* -- Features-Section Starting-- */
+.features-section{
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(241, 241, 241, 0.9)), url("image/portfolio-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.features-section .col:nth-child(4){
+    margin-left: 0;
+}
+
+.features-section .box{
+    margin-top: 5rem;
+}
+
+.features-section .col:nth-child(1),
+.features-section .col:nth-child(2),
+.features-section .col:nth-child(3){
+    margin-top: 0;
+}
+
+.features-section .box:hover{
+    box-shadow: 0.15rem 0.15rem 2rem rgba(117, 117, 117, 0.719);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255);
+    transition: 0.3s;
+}
+
+
+.freatures-icon img{
+    width: 100%;
+    display: block;
+}
+
+.features-information h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #3b3e41;
+}
+.features-information p{
+    color: #6c7279;
+    line-height: 1.7em;
+}
+/* -- Features-Section End-- */
+
+
+/* -- Work-Section Start-- */
+.work-section{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+}
+.work-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio{
+    width: 25%;
+    overflow: hidden;    
+    border: 0.05rem solid #fff;
+    position: relative;
+    cursor: pointer; 
+}
+
+.portfolio img{
+    width: 65rem;
+    display: block;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio:hover img{
+    transform: scale(1.2);
+}
+
+.layer{
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(225, 82, 82, 0.87);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-property: opacity;
+}
+
+.layer:hover{
+    opacity: 1;
+}
+.top-text{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5rem;
+    transition: 500ms ease-in-out;
+    transition-property: margin-bottom;
+}
+.bottom-text{
+    margin-top: 5rem;
+    transition: 500ms ease-in-out;
+    transition-property: margin-top;
+}
+
+.layer:hover .top-text{
+    margin: 0.8rem;
+}
+
+.layer:hover .bottom-text{
+    margin: 0.8rem;
+}
+/* -- Work-Section End-- */
+
+/*-- Our-Team-Section Start--*/
+
+.member-photo{
+    width: 27rem;
+    margin-bottom: 2rem;
+}
+.our-team img{
+    width: 100%;
+    display: block;
+}
+.our-team .role{
+    color: #e84545;
+}
+
+.social-links{
+    margin-top: 3rem;
+}
+
+.social-links ul li{
+    display: inline-block;
+    margin-left: 0.15rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    border: 0.1rem solid #E8ECEE;
+    text-align: center;
+    line-height: 3.5rem;
+    transition: 0.2s;
+    border-radius: 0.3rem;
+}
+
+.social-links ul li:nth-child(1){
+    margin-left: 0;
+}
+
+.social-links ul li:hover{
+    background: #e84545;
+}
+
+.social-links ul li i{
+    color:#c6cacc;
+    font-size: 1.8rem;
+    transition: 0.3s ease-in-out;
+    transition-property: transform;
+}
+
+.social-links ul li:hover i{
+    color: #fff;
+    transform: rotate(360deg);
+}
+/*-- Our-Team-Section End--*/
+
+/* -- testimonial-Section Start-- */
+.testimonial-sectiion{
+    width: 100%;
+    padding: 0;
+}
+
+.clients-reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #53354A;
+}
+
+.half-col{
+    flex-basis: 50%;
+}
+
+.half-col img{
+    width: 100%;
+    display: block;
+}
+
+.clients-reviews .right{
+    padding: 4%;
+    margin: auto 0;
+}
+
+.clients-reviews .right p{
+    font-size: 3.6rem;
+    font-style: italic;
+    font-family: 'Cardo', serif;
+    color: #fff;
+}
+
+.right .role{
+    color: #fff;
+    margin-top: 4rem;
+    display: block;
+    font-weight: 600;
+}
+
+.download-section{
+    padding: 10rem;
+    text-align: center;
+}
+.download-section h2{
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+.download-section p{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2d3033;
+    margin-top: 1.5rem;
+}
+
+.download-btn{
+    margin-top: 5rem;
+}
+
+.download-btn:hover{
+    background: #e02a2a;
+}
+
+/* -- testimonial-Section End-- */
+
+/*-- Footer-Section-Start --*/
+.footer-section{
+    color: #d0d0d1;
+    line-height: 2.4rem;
+}
+.top-footer{
+    background: #3a3e64;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.top-footer h5{
+    margin-bottom: 2rem;
+}
+
+.top-footer .footer-social-link ul li{
+    display: inline-block;
+    list-style: none;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #fff;
+    line-height: 4rem;
+    margin: 0 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.top-footer .footer-social-link ul li:hover{
+    background: #e02a2a;
+}
+
+.top-footer .footer-social-link ul li i{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+    transition-property: transform;
+
+}
+
+
+.top-footer .footer-social-link ul li:hover i{
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+
+.bottom-footer{
+    background-color: #313454;
+    text-align: center;
+    padding: 2rem;
+}
+
+.bottom-footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom-footer:hover a{
+    color: #e02a2a;
+}
+/*-- Footer-Section-End --*/
